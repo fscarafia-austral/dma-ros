@@ -7,6 +7,7 @@ from mlxtend.preprocessing import standardize
 
 from graficos import perceptron_plot 
 
+
 def func_eval(fname, x):
     match fname:
         case "purelin":
@@ -29,8 +30,8 @@ def deriv_eval(fname, y):  #atencion que y es la entrada y=f( x )
 
 
 # Ejemplo
-entrada = [ [0.7, 1.3], [2.0, 1.1], [1.0, 1.9],
-            [3.0, 1.0], [1.5, 2.1] ]
+entrada = [ [0.7, 1.3], [2.0, 1.1], [1.49, 2.09],
+            [2.25, 1.0], [1.5, 2.1]]
 salida = [0,0,0,1,1]
 
 # Paso las listas a numpy
@@ -57,7 +58,7 @@ x0 = np.random.uniform(-0.5, 0.5)
 FUNC = 'logsig'  # uso la logistica
 epoch_limit = 500    # para terminar si no converge
 Error_umbral = 0.001
-learning_rate = 0.1
+learning_rate = 0.01
 Error_last = 0    # lo debo poner algo dist a 0 la primera vez
 Error = 1   
 epoch = 0

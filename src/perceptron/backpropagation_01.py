@@ -2,7 +2,7 @@
 # lo hago con  matrices de pesos
 # puedo tener tantos inputs como quiera
 # puedo tener tantas neuronas ocultas como quiera
-# puedo tener tanas neuronas de salida como quiera
+# puedo tener tantas neuronas de salida como quiera
 # fuera de este codigo esta la decision que tomo segun el valor de salida de cada neurona de salida
 
 import math
